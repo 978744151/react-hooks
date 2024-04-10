@@ -18,8 +18,31 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+			"@": ["src"],
+			"@/*": ["src/*"]
+		}
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/**/*.tsx",
+    "src/**/**/**/*.tsx",
+    "src/**/**/**/**/*.tsx",
+    "src/**/**/**/**/**/*.tsx",
+		"src/**/*.vue",
+		"src/**/**/*.vue",
+		"src/**/**/**/*.vue",
+		"src/**/**/**/**/*.vue",
+		"src/**/**/**/**/**/*.vue",
+    "src/**/**/**/**/**/**/*.vue",
+		"src/**/*.d.ts",
+		"src/main.js",
+		"src/**/**/*.ts",
+		"src/**/**/*.js",
+		"src/**/**/**/*.js"
+	],
+  "references": [{ "path": "./tsconfig.node.json" }],
+ 
 }
